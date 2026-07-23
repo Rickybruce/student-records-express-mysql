@@ -1,0 +1,28 @@
+{
+  "name": "product_inventory_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node productApi.js",
+    "dev": "nodemon productApi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rickybruce/product_inventory_api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rickybruce/product_inventory_api/issues"
+  },
+  "homepage": "https://github.com/Rickybruce/product_inventory_api#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
