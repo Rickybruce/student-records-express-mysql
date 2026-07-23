@@ -4,23 +4,27 @@ const productItems = require("./productInventory");
 const productApi = express();
 
 const PORT = process.env.PORT ;
-const productItems = require("productInventory.js")
+
 
 productApi.use(express.json())  // This is my middleware
 
-productApi.get("/inventory", ()=>{
+productApi.get("/", (req, res) => {
+    res.send("Welcome to the Hospital Product Inventory API!");
+});
+
+productApi.get("/inventory", (req, res)=>{
     res.status(200).json(productItems);
 })
 
-productApi.post("/product", ()=>{
+productApi.post("/product", (req, res)=>{
     // Do something
 })
 
-productApi.patch("/product/:id", ()=>{
+productApi.patch("/product/:id", (req, res)=>{
     // Do something
 })
 
-productApi.delete("/product/:id", ()=>{
+productApi.delete("/product/:id", (req, res)=>{
     //Do something
 })
 
