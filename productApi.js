@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const productItems = require("./productInventory");
 const productApi = express();
-
+const db = require('./db')
 const PORT = process.env.PORT ;
 
 
